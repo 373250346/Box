@@ -131,8 +131,8 @@ public class ApiConfig {
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
         // Embedded Source : Update in Strings.xml if required 
         //http://piaoyuwang.gicp.net:5002/a/meowcf1.json
-        //String apiUrl = Hawk.get(HawkConfig.API_URL, HomeActivity.getRes().getString(R.string.app_source));
-        String apiUrl = Hawk.get(HawkConfig.API_URL,"http://piaoyuwang.gicp.net:5002/a/meowcf1.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, HomeActivity.getRes().getString(R.string.app_source));
+        //String apiUrl = Hawk.get(HawkConfig.API_URL,"http://piaoyuwang.gicp.net:5002/a/meowcf1.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
